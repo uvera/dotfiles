@@ -1,0 +1,2 @@
+[submodule "firefox/chrome"]
+	url = https://github.com/uvera/moonlight-userChrome/commits/master
