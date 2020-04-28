@@ -16,7 +16,7 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 
 HIST_STAMPS="dd.mm.yyyy"
 
-plugins=(adb gitfast python)
+plugins=(adb git gitfast python)
 
 source $ZSH/oh-my-zsh.sh
 source "${HOME}/.aliases/init.sh"
