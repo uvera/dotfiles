@@ -1,0 +1,18 @@
+[credential]
+	helper = cache --timeout 360000
+[user]
+	name = Dušan Uverić
+	email = dusan.uveric9@gmail.com
+	signingkey = 62D23894C6545FE9E953D0CDE9EAD9967C0598C0
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = true
+[http]
+	postBuffer = 157286400
+[color]
+	ui = auto
+[merge]
+	renamelimit = 2626
+[alias]
+	diffdir = difftool --dir-diff --tool=bc3 --no-prompt --no-symlinks
