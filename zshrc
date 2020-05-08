@@ -32,6 +32,8 @@ export LANG=en_US.UTF-8
 
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc
 
+[ -f ~/.aliases/init.sh ] && source ~/.aliases/init.sh
+
 eval $(thefuck --alias)
 
 snap list > /dev/null 2>&1
