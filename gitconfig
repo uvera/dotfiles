@@ -1,5 +1,5 @@
 [credential]
-	helper = cache --timeout 360000
+	helper = store
 [user]
 	name = Dušan Uverić
 	email = dusan.uveric9@gmail.com
@@ -28,3 +28,5 @@
     cmd = kitty kitty +kitten diff $LOCAL $REMOTE
 [cola]
 	spellcheck = false
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
