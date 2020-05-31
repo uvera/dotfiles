@@ -1,5 +1,12 @@
 setxkbmap -option caps:escape
 
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    { eval "$(<"$XDG_RUNTIME_DIR/ssh-agent.env")" } &>/dev/null
+fi
+
 source $HOME/.oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd histdb-update-outcome
@@ -29,5 +36,3 @@ export LANG=en_US.UTF-8
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc
 
 [ -f ~/.aliases/init.sh ] && source ~/.aliases/init.sh
-
-eval $(thefuck --alias)
