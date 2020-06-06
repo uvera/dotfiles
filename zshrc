@@ -1,5 +1,3 @@
-setxkbmap -option caps:escape
-
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
 fi
