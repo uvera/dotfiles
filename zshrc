@@ -23,6 +23,7 @@ plugins=(adb git gitfast python zsh-z)
 
 source $ZSH/oh-my-zsh.sh
 
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
