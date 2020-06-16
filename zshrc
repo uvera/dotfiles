@@ -5,9 +5,11 @@ if [[ ! "$SSH_AUTH_SOCK" ]]; then
     { eval "$(<"$XDG_RUNTIME_DIR/ssh-agent.env")" } &>/dev/null
 fi
 
-source $HOME/.oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
-autoload -Uz add-zsh-hook
-add-zsh-hook precmd histdb-update-outcome
+if [ -f $HOME/.oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh ]; then
+    source $HOME/.oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
+    autoload -Uz add-zsh-hook
+    add-zsh-hook precmd histdb-update-outcome
+fi
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
