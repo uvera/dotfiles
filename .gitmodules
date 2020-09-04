@@ -3,3 +3,6 @@
 [submodule "fish/fundle/tuvistavie/oh-my-fish-core"]
 	path = fish/fundle/tuvistavie/oh-my-fish-core
 	url = https://github.com/danhper/oh-my-fish-core
+[submodule "fish/fundle/jethrokuan/z"]
+	path = fish/fundle/jethrokuan/z
+	url = https://github.com/jethrokuan/z
