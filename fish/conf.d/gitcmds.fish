@@ -20,7 +20,7 @@ function abort
 end
 
 function chout
-    command git checkout $argv[0] -- $argv[1]
+    command git checkout $argv[1] -- $argv[2]
 end
 
 function cs_git
