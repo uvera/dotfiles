@@ -6,3 +6,6 @@
 [submodule "fish/fundle/jethrokuan/z"]
 	path = fish/fundle/jethrokuan/z
 	url = https://github.com/jethrokuan/z
+[submodule "fish/fundle/jethrokuan/fzf"]
+	path = fish/fundle/jethrokuan/fzf
+	url = https://github.com/jethrokuan/fzf
