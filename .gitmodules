@@ -9,3 +9,6 @@
 [submodule "fish/fundle/patrickf3139/fzf.fish"]
 	path = fish/fundle/patrickf3139/fzf.fish
 	url = https://github.com/patrickf3139/fzf.fish
+[submodule "fish/fundle/uvera/deldog.fish"]
+	path = fish/fundle/uvera/deldog.fish
+	url = https://github.com/uvera/deldog.fish
