@@ -4,7 +4,7 @@ add_newline = false
 disabled = true
 
 [directory]
-truncate_to_repo = false
+truncate_to_repo = true
 
 [aws]
 symbol = " "
