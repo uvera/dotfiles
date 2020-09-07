@@ -1,4 +1,5 @@
 [submodule "firefox/chrome"]
+    path = firefox/chrome
 	url = https://github.com/uvera/moonlight-userChrome/commits/master
 [submodule "fish/fundle/tuvistavie/oh-my-fish-core"]
 	path = fish/fundle/tuvistavie/oh-my-fish-core
