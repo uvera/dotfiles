@@ -8,7 +8,8 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
-alias nano='micro'
+alias nano='nvim'
+alias micro='nvim'
 
 alias ydl='youtube-dl -x --embed-thumbnail --add-metadata --audio-format mp3 -o "%(title)s.%(ext)s"'
 
