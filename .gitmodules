@@ -16,3 +16,6 @@
 [submodule "fish/fundle/uvera/bitwarden-quick.fish"]
 	path = fish/fundle/uvera/bitwarden-quick.fish
 	url = https://github.com/uvera/bitwarden-quick.fish
+[submodule "fish/fundle/uvera/imgur.fish"]
+	path = fish/fundle/uvera/imgur.fish
+	url = https://github.com/uvera/imgur.fish/blob/master/imgur.fish
