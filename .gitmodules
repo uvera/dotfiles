@@ -19,3 +19,6 @@
 [submodule "fish/fundle/uvera/imgur.fish"]
 	path = fish/fundle/uvera/imgur.fish
 	url = https://github.com/uvera/imgur.fish/blob/master/imgur.fish
+[submodule "fish/fundle/nickeb96/puffer-fish"]
+	path = fish/fundle/nickeb96/puffer-fish
+	url = https://github.com/nickeb96/puffer-fish
