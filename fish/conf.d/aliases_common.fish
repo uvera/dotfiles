@@ -22,3 +22,4 @@ alias icat="kitty +kitten icat"
 alias d="kitty +kitten diff"
 
 alias yayy="PKGEXT=.pkg.tar yay"
+alias pka="pikaur"
