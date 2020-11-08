@@ -19,3 +19,7 @@ source $HOME/.config/fish/functions/gitcmds.fish
 bind \cH backward-kill-path-component
 # CTRL+Delete
 bind \e\[3\;5~ kill-word
+
+set -Ux EDITOR nvim
+set -Ux VISUAL nvim
+
