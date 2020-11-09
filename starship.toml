@@ -1,72 +1,50 @@
 add_newline = false
 
-[line_break]
-disabled = false
+format = """
+[╭─](bold) $username$hostname ─ $directory $git_branch$git_commit $git_status
+[╰─](bold) $character """
 
 [directory]
-truncate_to_repo = true
+truncate_to_repo = false
+format = "[$read_only]($read_only_style)[$path]($style)"
+style = "cyan"
+read_only = "?"
+read_only_style = "red"
 
-[aws]
-symbol = " "
-
-[battery]
-full_symbol = ""
-charging_symbol = ""
-discharging_symbol = ""
-
-[conda]
-symbol = " "
-
-[docker]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
+[character]
+format = "$symbol"
+success_symbol = "\\$"
+error_symbol = "[\\$](red)"
 
 [git_branch]
-symbol = " "
+format = "[<$branch>]($style)"
+style = "blue"
+# truncation_length = 10
+# truncation_symbol = ""
 
-[golang]
-symbol = " "
+[git_commit]
+style = "#FF7700"
+format = "[\\($hash\\)]($style)"
 
-[haskell]
-symbol = " "
+[git_state]
+disabled = true
 
-[hg_branch]
-symbol = " "
+[git_status]
+conflicted = "[C](purple)\\($count\\)"
+untracked = "[A](green)"
+deleted = "[D](red)"
+modified = "[M](red)"
+staged = "[M](green)"
+format = "$conflicted$deleted$modified$untracked$staged"
 
-[java]
-symbol = " "
+[hostname]
+trim_at = ""
+style = "yellow"
+format = "@[$hostname]($style)"
 
-[julia]
-symbol = " "
+[username]
+style_root = "red"
+style_user = "yellow"
+show_always = true
+format = "[$user]($style)"
 
-[memory_usage]
-symbol = " "
-
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
-
-[nodejs]
-symbol = " "
-
-[package]
-symbol = " "
-
-[php]
-symbol = " "
-
-[python]
-symbol = " "
-
-[ruby]
-symbol = " "
-
-[rust]
-symbol = " "
