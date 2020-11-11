@@ -1,33 +1,30 @@
 add_newline = false
 
 format = """
-[╭─](bold) $username$hostname ─ $directory $git_branch$git_commit $git_status
-[╰─](bold) $character """
+[╭─](bold) $username$hostname ─ $directory$git_branch$git_commit$git_status
+[╰─](bold) $jobs$character """
 
 [directory]
 truncate_to_repo = false
 format = "[$read_only]($read_only_style)[$path]($style)"
-style = "cyan"
-read_only = "?"
+style = "bright-cyan"
+read_only = "ro "
 read_only_style = "red"
+truncation_length = 0
 
 [character]
 format = "$symbol"
 success_symbol = "\\$"
 error_symbol = "[\\$](red)"
+vicmd_symbol = "[:](yellow)"
 
 [git_branch]
-format = "[<$branch>]($style)"
-style = "blue"
-# truncation_length = 10
-# truncation_symbol = ""
+format = " [<$branch>]($style)"
+style = "bright-blue"
 
 [git_commit]
-style = "#FF7700"
+style = "#CC8400"
 format = "[\\($hash\\)]($style)"
-
-[git_state]
-disabled = true
 
 [git_status]
 conflicted = "[C](purple)\\($count\\)"
@@ -35,16 +32,133 @@ untracked = "[A](green)"
 deleted = "[D](red)"
 modified = "[M](red)"
 staged = "[M](green)"
-format = "$conflicted$deleted$modified$untracked$staged"
+format = " ([\\[](bright-black)$conflicted$untracked$staged$deleted$modified[\\]](bright-black))"
 
 [hostname]
 trim_at = ""
-style = "yellow"
+style = "bright-green"
 format = "@[$hostname]($style)"
 
 [username]
 style_root = "red"
-style_user = "yellow"
+style_user = "bright-green"
 show_always = true
 format = "[$user]($style)"
 
+[jobs]
+format = "[$number&]($style) "
+style = "bright-black"
+
+[git_state]
+disabled = true
+
+[shlvl]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[hg_branch]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[package]
+disabled = true
+
+[cmake]
+disabled = true
+
+[dart]
+disabled = true
+
+[dotnet]
+disabled = true
+
+[elixir]
+disabled = true
+
+[elm]
+disabled = true
+
+[erlang]
+disabled = true
+
+[golang]
+disabled = true
+
+[helm]
+disabled = true
+
+[java]
+disabled = true
+
+[julia]
+disabled = true
+
+[nim]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[ocaml]
+disabled = true
+
+[perl]
+disabled = true
+
+[php]
+disabled = true
+
+[purescript]
+disabled = true
+
+[python]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+[swift]
+disabled = true
+
+[terraform]
+disabled = true
+
+[zig]
+disabled = true
+
+[nix_shell]
+disabled = true
+
+[conda]
+disabled = true
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[openstack]
+disabled = true
+
+[env_var]
+disabled = true
+
+[crystal]
+disabled = true
+
+[custom]
+disabled = true
+
+[lua]
+disabled = true
+
+[battery]
+disabled = true

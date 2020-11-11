@@ -56,3 +56,4 @@ source ~/.zsh_plugins.sh
 
 # Starship prompt
 eval "$(starship init zsh)"
+[[ $- == *i* ]] && instantterminalhelp
