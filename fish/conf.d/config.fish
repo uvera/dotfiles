@@ -14,7 +14,7 @@ contains $HOME/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/bin
 contains $HOME/.cargo/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/.cargo/bin
 contains $HOME/go/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/go/bin
 
-source $HOME/.config/fish/functions/gitcmds.fish
+source $__fish_config_dir/functions/gitcmds.fish
 
 # CTRL+Backspace
 bind \cH backward-kill-path-component
