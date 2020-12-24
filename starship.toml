@@ -1,53 +1,53 @@
 add_newline = false
-
-format = """
+format = '''
 [╭─](bold) $username$hostname ─ $directory$git_branch$git_commit$git_status
-[╰─](bold) $jobs$character """
+[╰─](bold) $jobs$character '''
 
 [directory]
 truncate_to_repo = false
-format = "[$read_only]($read_only_style)[$path]($style)"
-style = "bright-cyan"
-read_only = "ro "
-read_only_style = "red"
+format = '[$read_only]($read_only_style)[$path]($style)'
+style = 'bright-cyan'
+read_only = 'ro '
+read_only_style = 'red'
 truncation_length = 0
 
 [character]
-format = "$symbol"
-success_symbol = "\\$"
-error_symbol = "[\\$](red)"
-vicmd_symbol = "[:](yellow)"
+format = '$symbol'
+success_symbol = '\$'
+error_symbol = '[\$](red)'
+vicmd_symbol = '[:](yellow)'
 
 [git_branch]
-format = " [<$branch>]($style)"
-style = "bright-blue"
+format = ' [<$branch>]($style)'
+style = 'bright-blue'
 
 [git_commit]
-style = "#CC8400"
-format = "[\\($hash\\)]($style)"
+style = '#CC8400'
+format = '[\($hash\)]($style)'
 
 [git_status]
-conflicted = "[C](purple)\\($count\\)"
-untracked = "[A](green)"
-deleted = "[D](red)"
-modified = "[M](red)"
-staged = "[M](green)"
-format = " ([\\[](bright-black)$conflicted$untracked$staged$deleted$modified[\\]](bright-black))"
+conflicted = '[C](purple)\($count\)'
+untracked = '[A](green)'
+deleted = '[D](red)'
+modified = '[M](red)'
+staged = '[M](green)'
+format = ' ([\[](bright-black)$conflicted$untracked$staged$deleted$modified[\]](bright-black))'
+disabled = false
 
 [hostname]
-trim_at = ""
-style = "bright-green"
-format = "@[$hostname]($style)"
+trim_at = ''
+style = 'bright-green'
+format = '@[$hostname]($style)'
 
 [username]
-style_root = "red"
-style_user = "bright-green"
+style_root = 'red'
+style_user = 'bright-green'
 show_always = true
-format = "[$user]($style)"
+format = '[$user]($style)'
 
 [jobs]
-format = "[$number&]($style) "
-style = "bright-black"
+format = '[$number&]($style) '
+style = 'bright-black'
 
 [git_state]
 disabled = true
