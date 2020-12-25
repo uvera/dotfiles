@@ -1,0 +1,93 @@
+set ignorecase
+set smartcase
+set scrolloff=3         " 3 lines above/below cursor when scrolling
+set ideajoin
+
+set surround
+
+" Integrate with system clipboard
+set clipboard=unnamedplus,unnamed
+
+let mapleader = " "
+
+" Use Q for formatting the current paragraph (or visual selection)
+vmap Q gq
+nmap Q gqap
+
+" These create newlines like o and O but stay in normal mode
+nmap zj o<Esc>k
+nmap zk O<Esc>j
+
+" key bindings for quickly moving between windows
+" h left, l right, k up, j down
+nmap <leader>h <c-w>h
+nmap <leader>l <c-w>l
+nmap <leader>k <c-w>k
+nmap <leader>j <c-w>j
+
+" Splits manipulation
+nmap <leader>wh :action SplitHorizontally<cr>
+nmap <leader>wv :action SplitVertically<cr>
+nmap <leader>wc :action Unsplit<cr>
+nmap <leader>wC :action UnsplitAll<cr>
+
+" unimpaired mappings - from https://github.com/saaguero/ideavimrc/blob/master/.ideavimrc
+nnoremap [<space> O<esc>j
+nnoremap ]<space> o<esc>k
+nnoremap [q :action PreviousOccurence<cr>
+nnoremap ]q :action NextOccurence<cr>
+nnoremap [m :action MethodUp<cr>
+nnoremap ]m :action MethodDown<cr>
+nnoremap [c :action VcsShowPrevChangeMarker<cr>
+nnoremap ]c :action VcsShowNextChangeMarker<cr>
+
+" Moving lines
+nmap [e :action MoveLineUp<cr>
+nmap ]e :action MoveLineDown<cr>
+
+" Moving statements
+nmap [s :action MoveStatementUp<cr>
+nmap ]s :action MoveStatementDown<cr>
+
+" Building, Running and Debugging
+nmap ,c :action CompileDirty<cr>
+nmap ,r :action Run<cr>
+nmap ,R :action RunAnything<cr>
+nmap ,b :action Debug<cr>
+nmap ,c :action RunClass<cr>
+nmap ,d :action DebugClass<cr>
+nmap ,t :action RerunTests<cr>
+nmap ,T :action RerunFailedTests<cr>
+
+" Tabs
+nmap <C-j> :action PreviousTab<cr>
+nmap <C-k> :action NextTab<cr>
+
+" Closing tabs
+nmap <leader>q :action CloseContent<cr>
+nmap <leader>Q :action ReopenClosedTab<cr>
+
+nmap <leader>g :action GotoDeclaration<cr>
+nmap <leader>b :action Back<cr>
+nmap <leader>f :action Forward<cr>
+
+nmap <leader>u :action FindUsages<cr>
+nmap <leader>t :action GotoFile<cr>
+nmap <leader>c :action GotoClass<cr>
+nmap <leader>ns :action GotoSymbol<cr>
+nmap <leader>r :action FileStructurePopup<cr>
+nmap <leader>d :action ShowErrorDescription<cr>
+nmap <leader>R :action RecentLocations<cr>
+nmap == :action ReformatCode<cr>
+
+" Switches between .cc and .h file!
+nmap <leader>s :action GotoRelated<cr>
+
+" IdeaVim uses 'a' for alt instead of Vim's 'm'
+nmap <a-j> 15gj
+nmap <a-k> 15gk
+
+" Won't work in visual mode (with vmap) for some reason.
+" Use default map of <c-/> for that.
+nmap cl :action CommentByLineComment<cr>
+nmap cb :action CommentByBlockComment<cr>
