@@ -96,5 +96,6 @@ nmap <a-k> 15gk
 
 " Won't work in visual mode (with vmap) for some reason.
 " Use default map of <c-/> for that.
-nmap cl :action CommentByLineComment<cr>
-nmap cb :action CommentByBlockComment<cr>
+nmap <a-c>l :action CommentByLineComment<cr>
+vmap <a-c>l :action CommentByLineComment<cr>
+vmap <a-c>b :action CommentByBlockComment<cr>
