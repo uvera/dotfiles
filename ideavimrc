@@ -24,10 +24,11 @@ nmap <leader>h <c-w>h
 nmap <leader>l <c-w>l
 nmap <leader>k <c-w>k
 nmap <leader>j <c-w>j
+nmap <leader>e <c-w>w
 
 " Splits manipulation
-nmap <leader>wh :action SplitHorizontally<cr>
-nmap <leader>wv :action SplitVertically<cr>
+nmap <leader>wh :action SplitHorizontally<cr> :action CloseContent<cr>
+nmap <leader>wv :action SplitVertically<cr> :action CloseContent<cr>
 nmap <leader>wc :action Unsplit<cr>
 nmap <leader>wC :action UnsplitAll<cr>
 
