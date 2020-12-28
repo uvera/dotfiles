@@ -26,6 +26,12 @@ nmap <leader>k <c-w>k
 nmap <leader>j <c-w>j
 nmap <leader>e <c-w>w
 
+" Binding for split stretch
+nmap <c-s>j :action StretchSplitToBottom<cr>
+nmap <c-s>k :action StretchSplitToTop<cr>
+nmap <c-s>h :action StretchSplitToLeft<cr>
+nmap <c-s>l :action StretchSplitToRight<cr>
+
 " Splits manipulation
 nmap <leader>wh :action SplitHorizontally<cr> :action CloseContent<cr>
 nmap <leader>wv :action SplitVertically<cr> :action CloseContent<cr>
