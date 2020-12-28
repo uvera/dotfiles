@@ -46,3 +46,6 @@ alias gupa='git pull --rebase --autostash'
 alias gp='git push'
 alias gpf='git push --force-with-lease'
 alias gpf!='git push --force'
+
+alias gdc='git diff --cached'
+alias gdh='git diff HEAD'
