@@ -99,3 +99,11 @@ nmap <a-k> 15gk
 nmap <a-c>l :action CommentByLineComment<cr>
 vmap <a-c>l :action CommentByLineComment<cr>
 vmap <a-c>b :action CommentByBlockComment<cr>
+
+" Thymeleaf expressions
+nmap <C-e>v i${}<esc>h i
+nmap <C-e>s i*{}<esc>h i
+nmap <C-e>m i#{}<esc>h i
+nmap <C-e>l i@{}<esc>h i
+nmap <C-e>f i~{}<esc>h i
+
