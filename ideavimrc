@@ -6,6 +6,11 @@ set ideajoin
 set commentary
 set surround
 set ReplaceWithRegister
+set argtextobj
+set exchange
+set highlightedyank
+
+let g:highlightedyank_highlight_duration = "450"
 
 " Integrate with system clipboard
 set clipboard=unnamedplus,unnamed
