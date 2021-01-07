@@ -3,7 +3,9 @@ set smartcase
 set scrolloff=3         " 3 lines above/below cursor when scrolling
 set ideajoin
 
+set commentary
 set surround
+set ReplaceWithRegister
 
 " Integrate with system clipboard
 set clipboard=unnamedplus,unnamed
@@ -96,9 +98,7 @@ nmap <a-k> 15gk
 
 " Won't work in visual mode (with vmap) for some reason.
 " Use default map of <c-/> for that.
-nmap <a-c>l :action CommentByLineComment<cr>
-vmap <a-c>l :action CommentByLineComment<cr>
-vmap <a-c>b :action CommentByBlockComment<cr>
+vmap gC :action CommentByBlockComment<cr>
 
 " Thymeleaf expressions
 nmap <C-e>v i${}<esc>h i
