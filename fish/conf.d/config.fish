@@ -17,9 +17,9 @@ contains $HOME/go/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/go/bin
 source $__fish_config_dir/functions/gitcmds.fish
 
 # CTRL+Backspace
-bind \cH backward-kill-path-component
+bind -M insert \cH backward-kill-path-component
 # CTRL+Delete
-bind \e\[3\;5~ kill-word
+bind -M insert \e\[3\;5~ kill-word
 
 set -Ux EDITOR nvim
 set -Ux VISUAL nvim
