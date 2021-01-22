@@ -1,4 +1,4 @@
 function __ranger
     ranger
-    commandline -f repaint
+    commandline -f force-repaint
 end
