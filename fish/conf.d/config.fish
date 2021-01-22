@@ -34,3 +34,9 @@ set fish_cursor_default block
 set fish_cursor_insert underscore
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
+
+bind dh backward-delete-char
+bind dl delete-char
+
+bind " w" execute
+bind " q" __fish_cancel_commandline
