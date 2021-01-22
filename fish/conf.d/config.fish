@@ -24,3 +24,4 @@ bind \e\[3\;5~ kill-word
 set -Ux EDITOR nvim
 set -Ux VISUAL nvim
 
+set --export FZF_DEFAULT_OPTS --height 65% --margin 1
