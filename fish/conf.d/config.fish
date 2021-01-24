@@ -29,6 +29,9 @@ set --export FZF_DEFAULT_OPTS --height 65% --margin 1
 bind -M insert \e\cn '__ranger'
 bind \e\cn '__ranger'
 
+bind -M insert \cn '__ranger_auto_cd'
+bind \cn '__ranger_auto_cd'
+
 fish_vi_key_bindings insert
 set fish_cursor_default underscore
 set fish_cursor_insert line
