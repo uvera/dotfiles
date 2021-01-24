@@ -2,7 +2,7 @@ alias cls='clear;clear;clear'
 
 alias gus='gdrive upload --share'
 
-alias ls='exa'
+alias ls='__ls'
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
