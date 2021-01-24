@@ -1,4 +1,4 @@
-function abort
+function __git_abort
     switch $argv
         case c
             command git cherry-pick --abort
@@ -17,13 +17,4 @@ function abort
         case '*'
             echo "Abort $argv? What?"
     end
-end
-
-function chout
-    command git checkout $argv[1] -- $argv[2]
-end
-
-function cs_git
-    command git config user.email "dusan.uveric9@gmail.com"
-    command git config user.name "Dušan Uverić"
 end

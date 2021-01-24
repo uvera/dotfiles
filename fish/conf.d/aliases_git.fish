@@ -50,3 +50,6 @@ alias gpf!='git push --force'
 
 alias gdc='git diff --cached'
 alias gdh='git diff HEAD'
+
+alias gia='__git_abort'
+alias gcho='__git_checkout'
