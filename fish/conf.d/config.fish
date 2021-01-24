@@ -46,3 +46,5 @@ bind " q" __fish_cancel_commandline
 
 bind -M insert \es __fish_prepend_doas
 bind \es __fish_prepend_doas
+
+bind \e\co 'refresh'
