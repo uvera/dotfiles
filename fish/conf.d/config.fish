@@ -30,7 +30,7 @@ bind -M insert \e\cn '__ranger'
 bind \e\cn '__ranger'
 
 fish_vi_key_bindings insert
-set fish_cursor_default block
+set fish_cursor_default underscore
 set fish_cursor_insert line
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
