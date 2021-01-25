@@ -35,69 +35,69 @@ nmap <leader>j <c-w>j
 nmap <leader>e <c-w>w
 
 " Binding for split stretch
-nmap <c-s>j :action StretchSplitToBottom<cr>
-nmap <c-s>k :action StretchSplitToTop<cr>
-nmap <c-s>h :action StretchSplitToLeft<cr>
-nmap <c-s>l :action StretchSplitToRight<cr>
+nmap <c-s>j <Action>(StretchSplitToBottom)
+nmap <c-s>k <Action>(StretchSplitToTop)
+nmap <c-s>h <Action>(StretchSplitToLeft)
+nmap <c-s>l <Action>(StretchSplitToRight)
 
 " Splits manipulation
-nmap <leader>wh :action MoveTabDown<cr>
-nmap <leader>wv :action MoveTabRight<cr>
-nmap <leader>wj :action MoveEditorToOppositeTabGroup<cr>
-nmap <leader>wc :action Unsplit<cr>
-nmap <leader>wC :action UnsplitAll<cr>
+nmap <leader>wh <Action>(MoveTabDown)
+nmap <leader>wv <Action>(MoveTabRight)
+nmap <leader>wj <Action>(MoveEditorToOppositeTabGroup)
+nmap <leader>wc <Action>(Unsplit)
+nmap <leader>wC <Action>(UnsplitAll)
 
 " unimpaired mappings - from https://github.com/saaguero/ideavimrc/blob/master/.ideavimrc
 nnoremap [<space> O<esc>j
 nnoremap ]<space> o<esc>k
-nnoremap [q :action PreviousOccurence<cr>
-nnoremap ]q :action NextOccurence<cr>
-nnoremap [m :action MethodUp<cr>
-nnoremap ]m :action MethodDown<cr>
-nnoremap [c :action VcsShowPrevChangeMarker<cr>
-nnoremap ]c :action VcsShowNextChangeMarker<cr>
+nnoremap [q <Action>(PreviousOccurence)
+nnoremap ]q <Action>(NextOccurence)
+nnoremap [m <Action>(MethodUp)
+nnoremap ]m <Action>(MethodDown)
+nnoremap [c <Action>(VcsShowPrevChangeMarker)
+nnoremap ]c <Action>(VcsShowNextChangeMarker)
 
 " Moving lines
-nmap [e :action MoveLineUp<cr>
-nmap ]e :action MoveLineDown<cr>
+nmap [e <Action>(MoveLineUp)
+nmap ]e <Action>(MoveLineDown)
 
 " Moving statements
-nmap [s :action MoveStatementUp<cr>
-nmap ]s :action MoveStatementDown<cr>
+nmap [s <Action>(MoveStatementUp)
+nmap ]s <Action>(MoveStatementDown)
 
 " Building, Running and Debugging
-nmap ,c :action CompileDirty<cr>
-nmap ,r :action Run<cr>
-nmap ,R :action RunAnything<cr>
-nmap ,b :action Debug<cr>
-nmap ,c :action RunClass<cr>
-nmap ,d :action DebugClass<cr>
-nmap ,t :action RerunTests<cr>
-nmap ,T :action RerunFailedTests<cr>
+nmap ,c <Action>(CompileDirty)
+nmap ,r <Action>(Run)
+nmap ,R <Action>(RunAnything)
+nmap ,b <Action>(Debug)
+nmap ,c <Action>(RunClass)
+nmap ,d <Action>(DebugClass)
+nmap ,t <Action>(RerunTests)
+nmap ,T <Action>(RerunFailedTests)
 
 " Tabs
-nmap <C-j> :action PreviousTab<cr>
-nmap <C-k> :action NextTab<cr>
+nmap <C-j> <Action>(PreviousTab)
+nmap <C-k> <Action>(NextTab)
 
 " Closing tabs
-nmap <leader>q :action CloseContent<cr>
-nmap <leader>Q :action ReopenClosedTab<cr>
+nmap <leader>q <Action>(CloseContent)
+nmap <leader>Q <Action>(ReopenClosedTab)
 
-nmap <leader>g :action GotoDeclaration<cr>
-nmap <leader>b :action Back<cr>
-nmap <leader>f :action Forward<cr>
+nmap <leader>g <Action>(GotoDeclaration)
+nmap <leader>b <Action>(Back)
+nmap <leader>f <Action>(Forward)
 
-nmap <leader>u :action FindUsages<cr>
-nmap <leader>t :action GotoFile<cr>
-nmap <leader>c :action GotoClass<cr>
-nmap <leader>ns :action GotoSymbol<cr>
-nmap <leader>r :action FileStructurePopup<cr>
-nmap <leader>d :action ShowErrorDescription<cr>
-nmap <leader>R :action RecentLocations<cr>
-nmap == :action ReformatCode<cr>
+nmap <leader>u <Action>(FindUsages)
+nmap <leader>t <Action>(GotoFile)
+nmap <leader>c <Action>(GotoClass)
+nmap <leader>ns <Action>(GotoSymbol)
+nmap <leader>r <Action>(FileStructurePopup)
+nmap <leader>d <Action>(ShowErrorDescription)
+nmap <leader>R <Action>(RecentLocations)
+nmap == <Action>(ReformatCode)
 
 " Switches between .cc and .h file!
-nmap <leader>s :action GotoRelated<cr>
+nmap <leader>s <Action>(GotoRelated)
 
 " IdeaVim uses 'a' for alt instead of Vim's 'm'
 nmap <a-j> 15gj
@@ -105,7 +105,7 @@ nmap <a-k> 15gk
 
 " Won't work in visual mode (with vmap) for some reason.
 " Use default map of <c-/> for that.
-vmap gC :action CommentByBlockComment<cr>
+vmap gC <Action>(CommentByBlockComment)
 
 " Thymeleaf expressions
 nmap <C-e>v a${}<esc>h
