@@ -120,3 +120,6 @@ imap <C-e>s *{}<esc>i
 imap <C-e>m #{}<esc>i
 imap <C-e>l @{}<esc>i
 imap <C-e>f ~{}<esc>i
+
+" Remap sneak -> surround
+vmap S <Plug>VSurround
