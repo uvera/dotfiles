@@ -41,8 +41,9 @@ nmap <c-s>h :action StretchSplitToLeft<cr>
 nmap <c-s>l :action StretchSplitToRight<cr>
 
 " Splits manipulation
-nmap <leader>wh :action SplitHorizontally<cr> :action CloseContent<cr>
-nmap <leader>wv :action SplitVertically<cr> :action CloseContent<cr>
+nmap <leader>wh :action MoveTabDown<cr>
+nmap <leader>wv :action MoveTabRight<cr>
+nmap <leader>wj :action MoveEditorToOppositeTabGroup<cr>
 nmap <leader>wc :action Unsplit<cr>
 nmap <leader>wC :action UnsplitAll<cr>
 
