@@ -13,3 +13,6 @@ user_pref("browser.search.suggest.enabled", true);
 user_pref("browser.urlbar.suggest.searches", true);
 
 user_pref("browser.cache.disk.enable", true);
+
+user_pref("browser.startup.page", 1);
+user_pref("browser.startup.homepage", "http:/localhost:3232/");
