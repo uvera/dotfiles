@@ -36,17 +36,29 @@ nmap <leader>j <c-w>j
 nmap <leader>e <c-w>w
 
 " Binding for split stretch
-nmap <c-s>j <Action>(StretchSplitToBottom)
-nmap <c-s>k <Action>(StretchSplitToTop)
-nmap <c-s>h <Action>(StretchSplitToLeft)
-nmap <c-s>l <Action>(StretchSplitToRight)
+nmap <c-w>+ <Action>(StretchSplitToBottom)
+nmap <c-w>- <Action>(StretchSplitToTop)
+nmap <c-w>< <Action>(StretchSplitToLeft)
+nmap <c-w>> <Action>(StretchSplitToRight)
+nmap <leader>+ <Action>(StretchSplitToBottom)
+nmap <leader>- <Action>(StretchSplitToTop)
+nmap <leader>< <Action>(StretchSplitToLeft)
+nmap <leader>> <Action>(StretchSplitToRight)
 
 " Splits manipulation
-nmap <leader>wh <Action>(MoveTabDown)
-nmap <leader>wv <Action>(MoveTabRight)
-nmap <leader>wj <Action>(MoveEditorToOppositeTabGroup)
-nmap <leader>wc <Action>(Unsplit)
-nmap <leader>wC <Action>(UnsplitAll)
+nmap <c-w>J <Action>(MoveTabDown)
+nmap <c-w>L <Action>(MoveTabRight)
+nmap <c-w>K <Action>(MoveEditorToOppositeTabGroup)
+nmap <c-w>H <Action>(Unsplit)
+nmap <c-w>Ha <Action>(UnsplitAll)
+nmap <leader>J <Action>(MoveTabDown)
+nmap <leader>L <Action>(MoveTabRight)
+nmap <leader>K <Action>(MoveEditorToOppositeTabGroup)
+nmap <leader>H <Action>(Unsplit)
+nmap <leader>Ha <Action>(UnsplitAll)
+
+" Save mapping
+nmap <leader>w <Action>(SaveAll)
 
 " unimpaired mappings - from https://github.com/saaguero/ideavimrc/blob/master/.ideavimrc
 nnoremap [<space> O<esc>j
@@ -107,19 +119,6 @@ nmap <a-k> 15gk
 " Won't work in visual mode (with vmap) for some reason.
 " Use default map of <c-/> for that.
 vmap gC <Action>(CommentByBlockComment)
-
-" Thymeleaf expressions
-nmap <C-e>v a${}<esc>h
-nmap <C-e>s a*{}<esc>h
-nmap <C-e>m a#{}<esc>h
-nmap <C-e>l a@{}<esc>h
-nmap <C-e>f a~{}<esc>h
-
-imap <C-e>v ${}<esc>i
-imap <C-e>s *{}<esc>i
-imap <C-e>m #{}<esc>i
-imap <C-e>l @{}<esc>i
-imap <C-e>f ~{}<esc>i
 
 " Remap sneak -> surround
 vmap S <Plug>VSurround
