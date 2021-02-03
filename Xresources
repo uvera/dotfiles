@@ -1,5 +1,5 @@
 
-instantwm.font: FiraCode:size=12
+instantwm.font: Fira Code Nerd Font:size=12
 instantwm.barheight: 11
 
 instantwm.bgcolor: #191A2A
@@ -53,7 +53,7 @@ instantmenu.green.fg : #dddddd
 instantmenu.red.fg : #dddddd
 instantmenu.yellow.fg : #dddddd
 
-instantmenu.font: FiraCode:size=14
+instantmenu.font: Fira Code Nerd Font:size=14
 
 *.background: #383c4a
 *.foreground: #D2D2D2
