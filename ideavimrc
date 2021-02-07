@@ -1,3 +1,4 @@
+let mapleader = " "
 set ignorecase
 set smartcase
 set scrolloff=3         " 3 lines above/below cursor when scrolling
@@ -11,13 +12,12 @@ set argtextobj
 set exchange
 set highlightedyank
 set sneak
+set easymotion
 
 let g:highlightedyank_highlight_duration = "450"
 
 " Integrate with system clipboard
 set clipboard=unnamedplus,unnamed
-
-let mapleader = " "
 
 " Use Q for formatting the current paragraph (or visual selection)
 vmap Q gq
