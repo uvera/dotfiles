@@ -46,3 +46,5 @@ bind -M insert \es __fish_prepend_doas
 bind \es __fish_prepend_doas
 
 bind \e\co 'refresh'
+
+alias fish_command_not_found=__fish_default_command_not_found_handler
