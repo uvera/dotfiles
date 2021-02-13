@@ -6,6 +6,7 @@ fundle plugin 'patrickf3139/fzf.fish'
 fundle plugin 'uvera/deldog.fish'
 fundle plugin 'uvera/bitwarden-quick.fish'
 fundle plugin 'uvera/imgur.fish'
+fundle plugin 'uvera/insulter.fish'
 fundle plugin 'nickeb96/puffer-fish'
 
 fundle init
