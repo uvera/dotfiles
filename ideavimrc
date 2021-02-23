@@ -29,6 +29,9 @@ nmap Q gqap
 nmap <leader>o o<Esc>k
 nmap <leader>O O<Esc>j
 
+" NERDTree
+nmap <leader>e :NERDTree<cr>
+
 " Binding for split stretch
 nmap <c-w>+ <Action>(StretchSplitToBottom)
 nmap <c-w>- <Action>(StretchSplitToTop)
