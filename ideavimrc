@@ -5,6 +5,8 @@ set scrolloff=3         " 3 lines above/below cursor when scrolling
 set ideajoin
 set virtualedit=onemore
 
+" Plugins
+set NERDTree
 set commentary
 set surround
 set ReplaceWithRegister
