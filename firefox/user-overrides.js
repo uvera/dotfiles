@@ -15,6 +15,9 @@ user_pref("browser.urlbar.suggest.searches", true);
 user_pref("browser.cache.disk.enable", true);
 
 user_pref("browser.startup.page", 1);
-user_pref("browser.startup.homepage", "http:/localhost:3232/");
+user_pref("browser.startup.homepage", "moz-extension://a93cbf8b-0f26-479d-89ba-3e48ec1f5aa3/index.html");
 
 user_pref("signon.rememberSignons", false);
+
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // default is false
+user_pref("svg.context-properties.content.enabled", true);
