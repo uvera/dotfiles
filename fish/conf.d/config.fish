@@ -14,6 +14,7 @@ fundle init
 contains $HOME/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/bin
 contains $HOME/.cargo/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/.cargo/bin
 contains $HOME/go/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/go/bin
+contains $HOME/.local/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/.local/bin
 
 # CTRL+Backspace
 bind -M insert \cH backward-kill-path-component
