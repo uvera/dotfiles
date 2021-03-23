@@ -48,6 +48,7 @@ abbr -a -g gp git push
 abbr -a -g gpf git push --force-with-lease
 abbr -a -g gpf! git push --force
 
+abbr -a -g gd git diff
 abbr -a -g gdc git diff --cached
 abbr -a -g gdh git diff HEAD
 
