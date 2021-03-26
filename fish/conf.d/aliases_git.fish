@@ -1,6 +1,5 @@
 abbr -a -g logg git log --pretty=short
 abbr -a -g cond git cherry-pick --continue
-abbr -a -g rsg git reset
 abbr -a -g pick git cherry-pick -s
 abbr -a -g skip git cherry-pick --skip
 
@@ -51,6 +50,9 @@ abbr -a -g gpf! git push --force
 abbr -a -g gd git diff
 abbr -a -g gdc git diff --cached
 abbr -a -g gdh git diff HEAD
+
+abbr -a -g gr git reset
+abbr -a -g grh git reset --hard
 
 alias gia='__git_abort'
 alias gcho='__git_checkout'
