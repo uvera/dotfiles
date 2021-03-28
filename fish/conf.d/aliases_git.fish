@@ -26,21 +26,47 @@ abbr -a -g gcsm git commit -s -m
 abbr -a -g gdc git diff --cached
 abbr -a -g gd git diff
 abbr -a -g gdh git diff HEAD
+abbr -a -g gfa git fetch --all --prune
+abbr -a -g gf git fetch
 abbr -a -g g git
+abbr -a -g glgg git log --graph
+abbr -a -g glg git log --stat
+abbr -a -g gl git pull
+abbr -a -g gloga git log --oneline --decorate --graph --all
+abbr -a -g glog git log --oneline --decorate --graph
+abbr -a -g glo git log --oneline --decorate
+abbr -a -g glp git log --pretty=
+abbr -a -g glps git log --pretty=short
+abbr -a -g gm git merge
+abbr -a -g gpd git push --dry-run
 abbr -a -g gpf! git push --force
 abbr -a -g gpf git push --force-with-lease
 abbr -a -g gp git push
-abbr -a -g gr git reset
-abbr -a -g grh git reset --hard
+abbr -a -g gra git remote add
+abbr -a -g grba git rebase --abort
+abbr -a -g grbc git rebase --continue
+abbr -a -g grb git rebase
+abbr -a -g grbi git rebase -i
+abbr -a -g grev git revert
+abbr -a -g gr git remote
+abbr -a -g grh git reset
+abbr -a -g grhh git reset --hard
 abbr -a -g gsb git status -sb
 abbr -a -g gsh git show
 abbr -a -g gsi git submodule init
 abbr -a -g gsps git show --pretty short --show-signature
 abbr -a -g gss git status -s
+abbr -a -g gstaa git stash apply
+abbr -a -g gsta git stash push
+abbr -a -g gstall git stash --all
+abbr -a -g gstc git stash clear
+abbr -a -g gstd git stash drop
 abbr -a -g gst git status
+abbr -a -g gstl git stash list
+abbr -a -g gstp git stash pop
+abbr -a -g gstu git stash --include-untracked
 abbr -a -g gupa git pull --rebase --autostash
 abbr -a -g gup git pull --rebase
-abbr -a -g logg git log --pretty=short
 abbr -a -g pick git cherry-pick -s
 abbr -a -g skip git cherry-pick --skip
 alias gcho='__git_checkout'
