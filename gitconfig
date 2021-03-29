@@ -28,8 +28,6 @@
     cmd = kitty kitty +kitten diff $LOCAL $REMOTE
 [cola]
 	spellcheck = false
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
 [pull]
 	rebase = true
 [init]
