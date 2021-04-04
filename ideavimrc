@@ -87,8 +87,8 @@ nmap ,t <Action>(RerunTests)
 nmap ,T <Action>(RerunFailedTests)
 
 " Tabs
-nmap <S-j> <Action>(PreviousTab)
-nmap <S-k> <Action>(NextTab)
+nmap <C-j> <Action>(PreviousTab)
+nmap <C-k> <Action>(NextTab)
 
 " Closing tabs
 nmap <leader>q <Action>(CloseContent)
