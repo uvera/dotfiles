@@ -4,7 +4,7 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
-abbr -a -g ydl youtube-dl -x --embed-thumbnail --add-metadata --audio-format mp3 -o "%(title)s.%(ext)s"
+abbr -a -g ydl 'youtube-dl -x --embed-thumbnail --add-metadata --audio-format mp3 -o "%(title)s.%(ext)s"'
 
 abbr -a -g mb_bios systemctl reboot --firmware-setup
 
