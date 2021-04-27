@@ -23,6 +23,11 @@ bind -M insert \e\[3\;5~ kill-word
 set -Ux EDITOR nvim
 set -Ux VISUAL nvim
 
+# set some sensible default options to always pass into invocations of less
+set -x LESS "--ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS --tabs=4 --window=-4"
+# don't store any history of commands executed in less
+set -x LESSHISTFILE /dev/null
+
 set --export FZF_DEFAULT_OPTS --height 65% --margin 1
 
 bind -M insert \e\cn '__ranger'
