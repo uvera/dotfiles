@@ -1,6 +1,5 @@
 starship init fish | source
 
-fundle plugin 'tuvistavie/oh-my-fish-core'
 fundle plugin 'jethrokuan/z'
 fundle plugin 'patrickf3139/fzf.fish'
 fundle plugin 'uvera/bitwarden-quick.fish'
