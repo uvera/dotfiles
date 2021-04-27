@@ -1,6 +1,7 @@
 starship init fish | source
 
 fundle plugin 'jethrokuan/z'
+fundle plugin 'patrickf1/colored_man_pages.fish'
 fundle plugin 'patrickf3139/fzf.fish'
 fundle plugin 'uvera/bitwarden-quick.fish'
 fundle plugin 'uvera/insulter.fish'
