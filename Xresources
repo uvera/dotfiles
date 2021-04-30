@@ -1,6 +1,9 @@
 
 instantwm.font: Fira Code Nerd Font:size=12
-instantwm.barheight: 10 
+instantwm.barheight: 8 
+instantwm.outergap: 4 
+instantwm.innergap: 4
+instantwm.smartgap: 1
 
 instantwm.minimizedcolor: #393156
 
