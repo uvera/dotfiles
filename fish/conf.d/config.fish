@@ -51,4 +51,8 @@ bind " q" __fish_cancel_commandline
 bind -M insert \es __fish_prepend_doas
 bind \es __fish_prepend_doas
 
+# prevent iterm2 from closing when typing Ctrl-D (EOF)
+bind \cd delete-char
+bind -M insert \cd delete-char
+
 alias fish_command_not_found=__fish_default_command_not_found_handler
