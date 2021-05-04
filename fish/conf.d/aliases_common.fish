@@ -1,8 +1,9 @@
-alias ls='__ls'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+alias ls="__ls"
+abbr -a -g l 'ls -l'
+abbr -a -g ll 'ls -lh'
+abbr -a -g la 'ls -a'
+abbr -a -g lla 'ls -la'
+abbr -a -g lt 'ls --tree'
 
 abbr -a -g ydl 'youtube-dl -x --embed-thumbnail --add-metadata --audio-format mp3 -o "%(title)s.%(ext)s"'
 
