@@ -23,8 +23,8 @@ instantwm.darkhoverfocus: #6e5991
 instantwm.darkfocus: #6e529c
 instantwm.focus: #9a7acf
 
-instantwm.border : #191A2A
-instantwm.activeborder : #9a7acf
+instantwm.border : #393156
+instantwm.activeborder : #d130dd
 
 instantwm.close : #f45dff
 instantwm.darkclose : #d130dd
