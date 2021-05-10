@@ -1,4 +1,6 @@
 alias ls="__ls"
+alias rm="rm -I"
+alias t="trash"
 abbr -a -g l 'ls -l'
 abbr -a -g ll 'ls -lh'
 abbr -a -g la 'ls -a'
