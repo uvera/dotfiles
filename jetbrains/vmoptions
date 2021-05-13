@@ -1,6 +1,6 @@
--Xms2048m
--Xmx8096m
--Xss64m
+-Xms1024m
+-Xmx4048m
+-Xss32m
 -XX:ReservedCodeCacheSize=512m
 -XX:+UseCompressedOops
 -XX:NewRatio=2
