@@ -17,6 +17,7 @@ set sneak
 set easymotion
 set multiple-cursors
 set vim-paragraph-motion
+set which-key
 
 let g:highlightedyank_highlight_duration = "450"
 
