@@ -66,3 +66,8 @@ bind \cd delete-char
 bind -M insert \cd delete-char
 
 alias fish_command_not_found=__fish_default_command_not_found_handler
+
+export GPG_TTY=(tty)
+if test -n SSH_CONNECTION
+    export PINENTRY_USER_DATA="USE_CURSES=1"
+end
