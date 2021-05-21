@@ -101,7 +101,7 @@ URxvt.font: xft:Fira Code Nerd Font Mono:size=13
 ! instantos-general
 URxvt.scrollBar: false
 URxvt.perl-ext-common: resize-font
-Xcursor.theme: elementary-instantos
-Xft.dpi: 85
-st.font: Fira Code Nerd Font Mono:pixelsize=13:antialias=true:autohint=true
-st.font2: JoyPixels:pixelsize=13:antialias=true:autohint=true
+Xcursor.theme: Bibata-Modern-Ice
+Xft.dpi: 90
+st.font: Fira Code Nerd Font Mono:pixelsize=14:antialias=true:autohint=true
+st.font2: JoyPixels:pixelsize=14:antialias=true:autohint=true
