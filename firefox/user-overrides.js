@@ -4,6 +4,7 @@ user_pref("privacy.clearOnShutdown.downloads", false); // see note above
 user_pref("privacy.clearOnShutdown.history", false); // Browsing & Download History
 user_pref("privacy.clearOnShutdown.offlineApps", false); // Offline Website Data
 user_pref("privacy.clearOnShutdown.sessions", false); // Active Logins
+user_pref("layers.acceleration.force-enabled", true);
 
 user_pref("privacy.resistFingerprinting.letterboxing", false); // [HIDDEN PREF]
 
