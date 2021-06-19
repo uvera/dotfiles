@@ -39,6 +39,7 @@ This function should only modify configuration layer settings."
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
+     vim-empty-lines
      ;; better-defaults
      emacs-lisp
      git
@@ -47,6 +48,16 @@ This function should only modify configuration layer settings."
      markdown
      multiple-cursors
      neotree
+     react
+     html
+     typescript
+     (typescript :variables
+                 typescript-backend 'lsp
+                 typescript-fmt-on-save t
+                 typescript-linter 'tslint
+                 typescript-lsp-linter 'tslint
+                 typescript-fmt-tool 'prettier)
+     javascript
      unicode-fonts
      (unicode-fonts :variables unicode-fonts-enable-ligatures t)
      (neotree :variables
