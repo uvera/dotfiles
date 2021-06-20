@@ -19,6 +19,9 @@
 ;; don't format with lsp
 (setq +format-with-lsp nil)
 
+;; disable auto completion, only manual mode
+(setq company-idle-delay nil)
+
 ;; scrolling tweaks
 (setq
  ;; scroll N lines to screen edge
