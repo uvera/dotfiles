@@ -20,7 +20,7 @@
 ;; scrolling tweaks
 (setq
  ;; scroll N lines to screen edge
- scroll-margin 4
+ scroll-margin 3
 
  ;; only 'jump' when moving this far off the screen
  scroll-conservatively 100000
@@ -32,7 +32,7 @@
  ;; keyboard scroll one line at a time
  scroll-step 1
  ;; mouse scroll N lines
- mouse-wheel-scroll-amount '(6 ((shift) . 1))
+ mouse-wheel-scroll-amount '(1 ((shift) . 1))
  ;; don't accelerate scrolling
  mouse-wheel-progressive-speed nil
 
