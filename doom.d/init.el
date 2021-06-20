@@ -20,10 +20,10 @@
        ;;layout            ; auie,ctsrnm is the superior home row
 
        :completion
-       (company +childframe)          ; the ultimate code completion backend
+       (company)          ; the ultimate code completion backend
        ;;helm              ; the *other* search engine for love and life
-       ;;ido               ; the other *other* search engine...
-       (ivy +fuzzy +icons +prescient +childframe)               ; a search engine for love and life
+       ;; ido               ; the other *other* search engine...
+       (ivy +icons +prescient)               ; a search engine for love and life
 
        :ui
        ;;deft              ; notational velocity for Emacs
@@ -41,7 +41,7 @@
        nav-flash         ; blink cursor line after big motions
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
-      (popup +all +defaults)   ; tame sudden yet inevitable temporary windows
+      ;; (popup +all +defaults)   ; tame sudden yet inevitable temporary windows
        tabs              ; a tab bar for Emacs
        treemacs          ; a project drawer, like neotree but cooler
        unicode           ; extended unicode support for various languages
@@ -81,7 +81,7 @@
        :checkers
        syntax              ; tasing you for every semicolon you forget
        ;;(spell +flyspell +everywhere) ; tasing you for misspelling mispelling
-       grammar           ; tasing grammar mistake every you make
+       ;;grammar           ; tasing grammar mistake every you make
 
        :tools
        ;;ansible
