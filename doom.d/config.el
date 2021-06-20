@@ -5,7 +5,7 @@
 
 (setq doom-theme 'doom-monokai-spectrum)
 
-(setq doom-font (font-spec :family "Source Code Pro" :size 13 :weight 'medium))
+(setq doom-font (font-spec :family "Source Code Pro" :size 17 :weight 'medium))
 
 (setq org-directory "~/org/")
 
