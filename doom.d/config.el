@@ -55,13 +55,10 @@
 
 (setq +format-with-lsp nil)
 (setq web-mode-code-indent-offset 2)
-(setq typescript-indent-level 2)
 
 (setq doom-font (font-spec :family "Fira Code" :size 13 :weight 'medium))
 
 (+global-word-wrap-mode +1)
-(global-font-lock-mode -1)
-(global-tree-sitter-mode +1)
 
 (map! :leader (:when
                (featurep! :ui hydra)
@@ -80,21 +77,3 @@
  :g "M-p b" #'evil-paste-before
  :g "M-p a" #'evil-paste-after
  )
-
-(use-package! tree-sitter
-  :ensure t)
-(define-derived-mode typescript-tsx-mode typescript-mode "TSX"
-  "Major mode for editing TSX files.
-
-Refer to Typescript documentation for syntactic differences between normal and TSX
-variants of Typescript.")
-(add-to-list 'auto-mode-alist '("\\.tsx?\\'" . typescript-tsx-mode))
-
-(use-package tree-sitter-langs
-  :ensure t
-  :after tree-sitter
-  :config
-  (tree-sitter-require 'tsx)
-  (add-to-list 'tree-sitter-major-mode-language-alist '(typescript-tsx-mode . tsx)))
-
-(setq tree-sitter-hl-use-font-lock-keywords nil)
