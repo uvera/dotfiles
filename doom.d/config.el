@@ -5,8 +5,6 @@
 
 (setq doom-theme 'doom-one)
 
-(setq doom-font (font-spec :family "Fira Code" :size 13 :weight 'medium))
-
 (setq org-directory "~/org/")
 
 (setq display-line-numbers-type 'relative)
