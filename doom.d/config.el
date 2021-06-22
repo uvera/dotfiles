@@ -69,6 +69,8 @@
                )
       )
 
+(map! :leader :desc "Code actions" :n "c a" #'tide-fix)
+
 (map!
  :g "M-p b" #'evil-paste-before
  :g "M-p a" #'evil-paste-after
