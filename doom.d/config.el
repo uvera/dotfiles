@@ -3,7 +3,7 @@
 (setq user-full-name "Dusan Uveric"
       user-mail-address "dusanuveric@protonmail.com")
 
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-monokai-spectrum)
 
 (setq doom-font (font-spec :family "Source Code Pro" :size 13 :weight 'medium))
 
