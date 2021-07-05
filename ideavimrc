@@ -4,6 +4,8 @@ set smartcase
 set scrolloff=3         " 3 lines above/below cursor when scrolling
 set ideajoin
 set virtualedit=onemore
+set relativenumber
+set number
 
 " Plugins
 set NERDTree
