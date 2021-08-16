@@ -75,3 +75,6 @@
  :g "M-p b" #'evil-paste-before
  :g "M-p a" #'evil-paste-after
  )
+
+(use-package eglot)
+(add-to-list 'eglot-server-programs '(typescript-tsx-mode . ("typescript-language-server" "--stdio")))
