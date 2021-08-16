@@ -20,6 +20,7 @@ set easymotion
 set multiple-cursors
 set vim-paragraph-motion
 set which-key
+set timeoutlen=5000
 
 let g:highlightedyank_highlight_duration = "450"
 
@@ -35,7 +36,7 @@ nmap <leader>o o<Esc>k
 nmap <leader>O O<Esc>j
 
 " NERDTree
-nmap <leader>e :NERDTree<cr>
+nmap <leader>op :NERDTree<cr>
 
 " Binding for split stretch
 nmap <c-w>+ <Action>(StretchSplitToBottom)
@@ -60,7 +61,7 @@ nmap <leader>H <Action>(Unsplit)
 nmap <leader>Ha <Action>(UnsplitAll)
 
 " Save mapping
-nmap <leader>w <Action>(SaveAll)
+nmap <leader>fs <Action>(SaveAll)
 
 " unimpaired mappings - from https://github.com/saaguero/ideavimrc/blob/master/.ideavimrc
 nnoremap [<space> O<esc>j
@@ -95,28 +96,21 @@ nmap <C-j> <Action>(PreviousTab)
 nmap <C-k> <Action>(NextTab)
 
 " Closing tabs
-nmap <leader>q <Action>(CloseContent)
-nmap <leader>Q <Action>(ReopenClosedTab)
+nmap <leader>qc <Action>(CloseContent)
+nmap <leader>qr <Action>(ReopenClosedTab)
 
 nmap <leader>g <Action>(GotoDeclaration)
-nmap <leader>b <Action>(Back)
-nmap <leader>f <Action>(Forward)
+nmap <c-w>b <Action>(Back)
+nmap <c-w>f <Action>(Forward)
 
-nmap <leader>u <Action>(FindUsages)
-nmap <leader>t <Action>(GotoFile)
-nmap <leader>c <Action>(GotoClass)
-nmap <leader>ns <Action>(GotoSymbol)
-nmap <leader>r <Action>(FileStructurePopup)
-nmap <leader>d <Action>(ShowErrorDescription)
-nmap <leader>R <Action>(RecentLocations)
+nmap <leader>fu <Action>(FindUsages)
+nmap <leader>ft <Action>(GotoFile)
+nmap <leader>fc <Action>(GotoClass)
+nmap <leader>cs <Action>(GotoSymbol)
+nmap <leader>fr <Action>(FileStructurePopup)
+nmap <leader>cd <Action>(ShowErrorDescription)
+nmap <leader>cR <Action>(RecentLocations)
 nmap == <Action>(ReformatCode)
-
-" Switches between .cc and .h file!
-nmap <leader>s <Action>(GotoRelated)
-
-" IdeaVim uses 'a' for alt instead of Vim's 'm'
-nmap <a-j> 15gj
-nmap <a-k> 15gk
 
 " Won't work in visual mode (with vmap) for some reason.
 " Use default map of <c-/> for that.
