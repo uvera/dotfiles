@@ -25,6 +25,7 @@ set multiple-cursors
 set vim-paragraph-motion
 set which-key
 set timeoutlen=5000
+set matchit
 
 let g:highlightedyank_highlight_duration = "450"
 
