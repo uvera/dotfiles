@@ -8,6 +8,8 @@ set virtualedit=onemore
 set relativenumber
 set number
 set whichwrap+=<,>,h,l
+set textobj-indent
+set textobj-entire
 
 " Plugins
 set NERDTree
