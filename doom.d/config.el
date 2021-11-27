@@ -3,7 +3,7 @@
 (setq user-full-name "Dusan Uveric"
       user-mail-address "dusanuveric@protonmail.com")
 
-(setq doom-theme 'doom-monokai-spectrum)
+(setq doom-theme 'doom-opera)
 
 (setq doom-font (font-spec :family "Source Code Pro" :size 13 :weight 'medium))
 
@@ -75,6 +75,5 @@
  :g "M-p b" #'evil-paste-before
  :g "M-p a" #'evil-paste-after
  )
-
-(use-package eglot)
-(add-to-list 'eglot-server-programs '(typescript-tsx-mode . ("typescript-language-server" "--stdio")))
+;; (use-package eglot)
+;; (add-to-list 'eglot-server-programs '(typescript-tsx-mode . ("typescript-language-server" "--stdio")))
