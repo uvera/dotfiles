@@ -10,12 +10,12 @@ fundle plugin 'franciscolourenco/done'
 
 fundle init
 
-contains $HOME/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/bin
-contains $HOME/.cargo/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/.cargo/bin
-contains $HOME/go/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/go/bin
-contains $HOME/.local/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/.local/bin
-contains $HOME/.emacs.d/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/.emacs.d/bin
-contains $HOME/.deno/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/.deno/bin
+fish_add_path $HOME/bin
+fish_add_path $HOME/.cargo/bin
+fish_add_path $HOME/go/bin
+fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.emacs.d/bin
+fish_add_path $HOME/.deno/bin
 
 # CTRL+Backspace
 bind -M insert \cH backward-kill-path-component
