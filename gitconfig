@@ -2,8 +2,8 @@
 	helper = store
 [user]
 	name = Dušan Uverić
-	email = dusan.uveric9@gmail.com
-	signingkey = 62D23894C6545FE9E953D0CDE9EAD9967C0598C0
+	email = dusan.uveric@makit.lv
+	signingkey = CE1E8000ABC21A11
 [gpg]
 	program = gpg2
 [commit]
@@ -22,12 +22,6 @@
 [difftool]
     prompt = false
     trustExitCode = true
-[difftool "kitty"]
-    cmd = kitty +kitten diff $LOCAL $REMOTE
-[difftool "kitty.gui"]
-    cmd = kitty kitty +kitten diff $LOCAL $REMOTE
-[cola]
-	spellcheck = false
 [pull]
 	rebase = true
 [init]
