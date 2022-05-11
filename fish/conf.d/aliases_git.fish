@@ -25,6 +25,7 @@ abbr -a -g gcs git commit -v -s
 abbr -a -g gcsm git commit -s -m
 abbr -a -g gdc git diff --cached
 abbr -a -g gd git diff
+abbr -a -g gds git diff --stat
 abbr -a -g gdh git diff HEAD
 abbr -a -g gfa git fetch --all --prune
 abbr -a -g gf git fetch
