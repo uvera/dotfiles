@@ -10,6 +10,12 @@ set number
 set whichwrap+=<,>,h,l
 set textobj-indent
 set textobj-entire
+set clipboard=unnamed,unnamedplus
+set clipboard+=ideaput
+set showmode
+set incsearch
+
+
 
 " Plugins
 set NERDTree
@@ -23,9 +29,11 @@ set sneak
 set easymotion
 set multiple-cursors
 set vim-paragraph-motion
+set vim-indent-object
 set which-key
 set timeoutlen=5000
 set matchit
+packadd matchit
 
 let g:highlightedyank_highlight_duration = "450"
 
