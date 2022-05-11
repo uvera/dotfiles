@@ -1,4 +1,5 @@
 starship init fish | source
+status --is-interactive; and rbenv init - fish | source
 
 fundle plugin 'jethrokuan/z'
 fundle plugin 'patrickf1/colored_man_pages.fish'
@@ -10,12 +11,14 @@ fundle plugin 'franciscolourenco/done'
 
 fundle init
 
+fish_add_path -m $HOME/.rbenv/shims
 fish_add_path $HOME/bin
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.emacs.d/bin
 fish_add_path $HOME/.deno/bin
+fish_add_path $HOME/.local/share/gem/ruby/3.0.0/bin
 
 # CTRL+Backspace
 bind -M insert \cH backward-kill-path-component

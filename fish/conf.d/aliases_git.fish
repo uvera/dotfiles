@@ -69,5 +69,6 @@ abbr -a -g gupa git pull --rebase --autostash
 abbr -a -g gup git pull --rebase
 abbr -a -g pick git cherry-pick -s
 abbr -a -g skip git cherry-pick --skip
+abbr -a -g gfarhhb 'git fetch && git reset --hard "$(git remote | head -n 1)/$(git branch --show-current)"'
 alias gcho='__git_checkout'
 alias gia='__git_abort'
