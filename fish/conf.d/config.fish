@@ -10,6 +10,7 @@ fundle plugin 'franciscolourenco/done'
 fundle plugin 'veirt/web-search.fish'
 fundle plugin 'FabioAntunes/base16-fish-shell'
 fundle plugin 'joshmedeski/fish-lf-icons'
+fundle plugin 'jorgebucaran/nvm.fish'
 
 fundle init
 
