@@ -16,3 +16,4 @@ alias d="kitty +kitten diff"
 
 alias yayy="PKGEXT=.pkg.tar yay"
 abbr -a -g pka pikaur
+abbr -a -g zx zoxide
