@@ -14,11 +14,12 @@
 	ui = auto
 [merge]
 	renamelimit = 2626
+    conflictstyle = diff3
 [alias]
 	diffdir = difftool --dir-diff --tool=bc3 --no-prompt --no-symlinks
+
 [diff]
-    tool = kitty
-    guitool = kitty.gui
+    colorMoved = default
 [difftool]
     prompt = false
     trustExitCode = true
@@ -26,3 +27,14 @@
 	rebase = true
 [init]
 	defaultBranch = main
+
+
+[core]
+  pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+
