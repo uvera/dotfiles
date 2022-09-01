@@ -1,5 +1,6 @@
 starship init fish | source
 status --is-interactive; and rbenv init - fish | source
+status --is-interactive; and source (nodenv init -|psub)
 
 fundle plugin 'patrickf1/colored_man_pages.fish'
 fundle plugin 'patrickf3139/fzf.fish'
