@@ -3,7 +3,7 @@
 [user]
 	name = Dušan Uverić
 	email = dusan.uveric@makit.lv
-	signingkey = CE1E8000ABC21A11
+	signingkey = 9C8046FC71DB4E2F
 [gpg]
 	program = gpg2
 [commit]
